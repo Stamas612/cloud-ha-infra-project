@@ -14,25 +14,12 @@ What I built:
 - Security Groups
 - SSH access to the EC2 instances
 
-Architecture:
-
-Internet
-    |
-    v
-Application Load Balancer
-    |
-    +----------------+
-    |                |
-    v                v
- EC2 #1            EC2 #2
- AZ 1a             AZ 1b
-
 The two EC2 instances are running in different Availability Zones.
 
 The Application Load Balancer distributes HTTP traffic between them and uses health checks to determine whether the instances are available.
 
 Terraform:
--The infrastructure is managed with Terraform.
+The infrastructure is managed with Terraform.
 
 Current Terraform resources include:
 - VPC
