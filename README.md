@@ -13,7 +13,6 @@ What I built:
 - Target Group with health checks
 - Security Groups
 - SSH access to the EC2 instances
-
 The two EC2 instances are running in different Availability Zones.
 
 The Application Load Balancer distributes HTTP traffic between them and uses health checks to determine whether the instances are available.
@@ -36,14 +35,14 @@ Current Terraform resources include:
 Project structure:
 
 terraform/
-├── alb.tf
-├── ec2.tf
-├── key_pair.tf
-├── provider.tf
-├── route.tf
-├── security_group.tf
-├── subnet.tf
-└── vpc.tf
+- alb.tf
+- ec2.tf
+- key_pair.tf
+- provider.tf
+- route.tf
+- security_group.tf
+- subnet.tf
+- vpc.tf
 
 AWS Region:
 - eu-north-1 (Stockholm)
